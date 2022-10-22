@@ -5,7 +5,9 @@ https://github.com/Tarun-Elango/COMP-472-Mini-project-1.git
 Instructions to run 
 
 download all dependencies to local machine using pip or any package manager.
-os-sys, sklearn, csv, json, gensim, pandas, numpy, matplotlib, nltk
+os-sys, sklearn, csv, json, gensim, pandas, numpy, matplotlib, nltk<br />
+The python files were run using pycharm for python with python version 3.10. <br />
+hence recommended to use pycharm and run program using pycharms terminal <br />
 
 
 ## Question 1
