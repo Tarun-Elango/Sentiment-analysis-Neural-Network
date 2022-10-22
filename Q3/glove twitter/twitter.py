@@ -135,7 +135,7 @@ def hitRate(post):  # takes in tokenized data
                 success = success + 1
             except KeyError:
                 fail = fail + 1
-    print(success)
+
     hit_rate_value = ((success) / totalTokens) * 100
     return hit_rate_value
 
@@ -190,9 +190,6 @@ def grid_neural(x_train, X_text, y_train, y_test):
 # split dataset for emotion
 X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, random_state=50)
 
-#hit rate for test and training set
-print('hit rate for all the training set of the vocab(using nltk)',hitRate(X_train))
-print('hit rate for all the test set of the vocab(using nltk)',hitRate(post))
 
 # emotion
 performance.write('\nQ3 emotion metrics\n')
