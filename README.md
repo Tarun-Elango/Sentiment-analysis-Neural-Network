@@ -16,7 +16,7 @@ data.csv file generated, keep it here needed for next parts <br />
 
 ## Question 2
  
-For .ipynb files<br />
+### For .ipynb files<br />
 
 cd Q2<br />
 cd into the respective folder (each model has its folder, along with Q 2.5. cd into any folder for the ipynb file )<br />
@@ -29,10 +29,14 @@ open Google colab on any browser, login with gmail account<br />
 
 
 
-for .py files <br />
+### for .py files <br />
 cd into respective folders(the desired model)<br />
 run .py files in any python compiler<br />
 
 ## Question 3
 cd Q3<br />
 run download.py (downloads the three pre trained model to local computers. )<br />
+files downloaded in local machine Users/{username}/gensim-data (cd into this folder)<br />
+cd into glove-twitter-25, unzip glove-twitter-25.gz(7 zip or breezip or any gzip opener), go into newly generated glove-twitter-25, copy glove-twitter-25.txt into Q3/glove twitter/ <br />
+cd back into local machine's Users/{username}/gensim-data/glove-wiki-gigaword-50, unzip glove-wiki-gigaword-50.gz(7 zip or breezip or any gzip opener), go into newly generated glove-wiki-gigaword-50, copy glove-wiki-gigaword-50.txt into Q3/glove wiki 50/ <br />
+cd back into local machine's Users/{username}/gensim-data/word2vec-google-news-300, unzip word2vec-google-news-30.gz(7 zip or breezip or any gzip opener), go into newly generated word2vec-google-news-30, copy word2vec-google-news-30.bin into Q3/google word to vec/ <br />
