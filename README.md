@@ -6,14 +6,14 @@ download all dependencies to local machine using pip or any package manager.
 os-sys, sklearn, csv, json, gensim, pandas, numpy, matplotlib
 
 
-##Question 1
+## Question 1
 cd Q1
 run main.py in any python compiler. 
 data.csv file generated, keep it here needed for next parts
 
 
-##Question 2
-
+## Question 2
+ 
 For .ipynb files
 
 cd Q2
@@ -31,6 +31,6 @@ for .py files
 cd into respective folders(the desired model)
 run .py files in any python compiler
 
-##Question 3
+## Question 3
 cd Q3
 run download.py (downloads the three pre trained model to local computers. )
