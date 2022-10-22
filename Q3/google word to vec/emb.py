@@ -19,7 +19,6 @@ file = open(sys.path[0] + '/../../Q1/data.csv', encoding="utf-8")
 #____________________________________Q3.1
 # download the model and save to computer
 #model_google_news = download.load("word2vec-google-news-300", return_path= True)
-# print(model_google_news)
 
 hyperparameters = {
     'activation': ['relu','tanh'],  # , ,'identity', 'logistic''relu',
@@ -80,7 +79,7 @@ print('total tokens for reddit post without punctuations in training set is: ', 
 
 # load the model
 google_300_model = KeyedVectors.load_word2vec_format("GoogleNews-vectors-negative300.bin", binary=True)
-#print(google_300_model['japan'].shape) #test if model works
+#print(google_300_model['hello'].shape) #test if model works
 
 #____________________________________Q3.3
 def postEmb(post, x):  # takes in post number and post
