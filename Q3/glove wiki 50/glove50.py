@@ -19,7 +19,7 @@ file = open(sys.path[0] + '/../../Q1/data.csv', encoding="utf-8")
 # download the model and save to computer
 #modelwiki = download.load("glove-wiki-gigaword-50", return_path= True)
 model = KeyedVectors.load_word2vec_format("glove-wiki-gigaword-50.txt", binary=False)
-#print(model['japan']) #test if model works
+#print(model['hello']) #test if model works
 
 hyperparameters = {
     'activation': ['relu','tanh'],  # , ,'identity', 'logistic''relu',
@@ -201,8 +201,8 @@ performance.write('\n----------------------------x---------------------------\n'
 x2_train, x2_test, z_train, z_test = train_test_split(X, Z, test_size=0.2, random_state=50)
 # sentiment
 performance.write('\nQ3 sentiment metrics\n')
-#print('base neural network accuracy score for sentiment is :', base_neural(x2_train, x2_test, z_train, z_test))
-#print('grid search neural network accuracy score for sentiment is :', grid_neural(x2_train, x2_test, z_train, z_test))
+print('base neural network accuracy score for sentiment is :', base_neural(x2_train, x2_test, z_train, z_test))
+print('grid search neural network accuracy score for sentiment is :', grid_neural(x2_train, x2_test, z_train, z_test))
 performance.write('\n----------------------------x---------------------------\n')
 
 performance.close()
