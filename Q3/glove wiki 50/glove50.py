@@ -190,10 +190,6 @@ def grid_neural(x_train, X_text, y_train, y_test):
 # split dataset for emotion
 X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, random_state=50)
 
-#hit rate for test and training set
-print('hit rate for all the training set of the vocab(using nltk)',hitRate(X_train))
-print('hit rate for all the test set of the vocab(using nltk)',hitRate(post))
-
 # emotion
 performance.write('\nQ3 emotion metrics\n')
 print('base neural network accuracy score for emotion is :', base_neural(X_train, X_test, Y_train, Y_test))
