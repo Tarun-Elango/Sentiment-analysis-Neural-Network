@@ -1,3 +1,5 @@
+https://github.com/Tarun-Elango/COMP-472-Mini-project-1.git
+
 # COMP 472 Mini Project 1 
 
 Instructions to run 
