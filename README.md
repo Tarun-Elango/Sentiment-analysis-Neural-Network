@@ -28,6 +28,7 @@ open Google colab on any browser, login with gmail account<br />
 5. once uploaded, run the code sections. <br />
 
 ### for .py files <br />
+cd into q2<br />
 cd into respective folders(the desired model like naive bayes or neural network etc...)<br />
 run the respective .py files in any python compiler or using the command 'python {python filename}.py'<br />
 
