@@ -40,3 +40,4 @@ files downloaded in local machine Users/{username}/gensim-data (cd into this fol
 cd into local machine's Users/{username}/gensim-data/glove-twitter-25, unzip glove-twitter-25.gz(7 zip or breezip or any gzip opener), go into newly generated glove-twitter-25, copy glove-twitter-25.txt into Q3/glove twitter/ <br /> <br />
 cd back into local machine's Users/{username}/gensim-data/glove-wiki-gigaword-50, unzip glove-wiki-gigaword-50.gz(7 zip or breezip or any gzip opener), go into newly generated glove-wiki-gigaword-50, copy glove-wiki-gigaword-50.txt into Q3/glove wiki 50/ <br /> <br />
 cd back into local machine's Users/{username}/gensim-data/word2vec-google-news-300, unzip word2vec-google-news-30.gz(7 zip or breezip or any gzip opener), go into newly generated word2vec-google-news-30, copy word2vec-google-news-30.bin into Q3/google word to vec/ <br /> <br />
+Now run the python files for the three pre trained model on any python compiler. 
