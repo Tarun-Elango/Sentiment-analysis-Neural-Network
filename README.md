@@ -32,7 +32,7 @@ cd into respective folders(the desired model like naive bayes or neural network 
 run the respective .py files in any python compiler or using the command 'python {python filename}.py'<br />
 
 
-## Question 3 assuming its windows (for other OS file location for gensim-data may or may not differ)
+## Question 3 assuming its windows (for other OS, file location for gensim-data may or may not differ)
 cd Q3<br />
 run download.py (downloads the three pre trained model to local computer.)<br /> <br />
 files downloaded in local machine at Users/{username}/gensim-data (cd into this folder)<br /> <br />
