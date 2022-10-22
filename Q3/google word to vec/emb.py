@@ -19,6 +19,9 @@ file = open(sys.path[0] + '/../../Q1/data.csv', encoding="utf-8")
 #____________________________________Q3.1
 # download the model and save to computer
 #model_google_news = download.load("word2vec-google-news-300", return_path= True)
+# load the model
+google_300_model = KeyedVectors.load_word2vec_format("GoogleNews-vectors-negative300.bin", binary=True)
+#print(google_300_model['hello'].shape) #test if model works
 
 hyperparameters = {
     'activation': ['relu','tanh'],  # , ,'identity', 'logistic''relu',
@@ -73,13 +76,11 @@ def tokensCountNoPunc(post_noPunc):  # takes in tokenized data
     return sumNoPunc
 
 
-# print(uniqueTokens(post))
+#print('total unique tokens in the reddit posts: ',uniqueTokens(post))
 print('total tokens for reddit post in training set is: ', tokensCount(post))
 print('total tokens for reddit post without punctuations in training set is: ', tokensCountNoPunc(post_noPunc))
 
-# load the model
-google_300_model = KeyedVectors.load_word2vec_format("GoogleNews-vectors-negative300.bin", binary=True)
-#print(google_300_model['hello'].shape) #test if model works
+
 
 #____________________________________Q3.3
 def postEmb(post, x):  # takes in post number and post
@@ -101,10 +102,12 @@ def postEmb(post, x):  # takes in post number and post
     return avg
 
 
-print('embedding of a reddit post 10 as the average of embeddings of its words', postEmb(10))
+print('embedding of a reddit post 10 as the average of embeddings of its words', postEmb(post, 10))
 
 #____________________________________Q3.4
 # overall hit rates
+# note nltk library's freq dist was not used to get the individual tokens, due to computer constrains
+
 def hitRateunique(data):  # takes the entire data set
     # this function produces the hit rate for all the unique words in token
     vectorizer = CountVectorizer()
