@@ -7,9 +7,9 @@ os-sys, sklearn, csv, json, gensim, pandas, numpy, matplotlib
 
 
 ## Question 1
-cd Q1;
-run main.py in any python compiler. ;
-data.csv file generated, keep it here needed for next parts;
+cd Q1 <br />
+run main.py in any python compiler. <br />
+data.csv file generated, keep it here needed for next parts <br />
 
 
 ## Question 2
