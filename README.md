@@ -2,23 +2,35 @@
 
 Instructions to run 
 
-1. make sure all dependecies are installed pip install
-os-sys, sklearn, pandas, numpy, matplotlib, csv, json.
+download all dependencies to local machine using pip or any package manager.
+os-sys, sklearn, csv, json, gensim, pandas, numpy, matplotlib
 
-2. cd Q1
 
-3. run main.py (question 1)
+Question 1
+cd Q1
+run main.py in any python compiler. 
+data.csv file generated, keep it here needed for next parts
 
-3. cd Q2, cd into the next folder(named on models)
 
-4. run the python program for the respective models/questions, 
-suggested to use ipynb for question 2, helps  partition the different sections 
-(colab was used to run all parts of question 2, hence format in python might be different)
+Question 2
 
-5. cd Q3
+For .ipynb files
 
-6. cd into the corresponding embedding pre trained model folder. 
+cd Q2
+cd into the respective folder (each model has its folder, along with Q 2.5. cd into any folder for the ipynb file )
+open Google colab on any browser, login with gmail account
+1. either go to upload section when promted to created a new notebook, or on the main page go to file and select upload notebook 
+2. from the Q2 folder select the desired ipynb file to run and upload
+3. once opened, on the left side select the files icon(4th icon on the left panel) wait for it to connect
+4. right click inside the panel and select upload, and then upload the data.csv fiel that was genereted in Q1 (inside the Q1 folder)
+5. once uploaded, run the code sections. 
 
-7. run the corresponding python program 
 
-8. performance files generated in the corresponding folders. 
+
+for .py files
+cd into respective folders(the desired model)
+run .py files in any python compiler
+
+Question 3
+cd Q3
+run download.py (downloads the three pre trained model to local computers. )
