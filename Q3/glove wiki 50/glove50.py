@@ -45,7 +45,7 @@ post = df_x.apply(nltk.tokenize.word_tokenize)
 regex = RegexpTokenizer(r'\w+')  # source https://www.nltk.org/api/nltk.tokenize.regexp.html
 post_noPunc = df_x.apply(regex.tokenize)  # has the words from reddit post, without punctuations
 
-
+#____________________________________Q3.2
 def uniqueTokens(post):  # takes in tokenized data
     # the following code produces the total unique tokens using nltk library, takes a lot of time
     sum = []
@@ -72,12 +72,13 @@ def tokensCountNoPunc(post_noPunc):  # takes in tokenized data
         sumNoPunc = sumNoPunc + len(post_noPunc[i])
     return sumNoPunc
 
-
-# print(uniqueTokens(post))
+#print('total unique tokens in the reddit posts: ',uniqueTokens(post))
 print('total tokens for reddit post in training set is: ', tokensCount(post))
 print('total tokens for reddit post without punctuations in training set is: ', tokensCountNoPunc(post_noPunc))
 
 
+
+#____________________________________Q3.3
 def postEmb(post, x):  # takes in post number and post
     # function to create embedding of a post as average of the embeddings of its words(skipped if not present)
     sumEmbedd = 0
@@ -96,10 +97,13 @@ def postEmb(post, x):  # takes in post number and post
         avg = sumEmbedd / totalCount
     return avg
 
-print('embedding of a reddit post 10 as the average of embeddings of its words', postEmb(10))
+print('embedding of a reddit post 10 as the average of embeddings of its words', postEmb(post,10))
 
 
+#____________________________________Q3.4
 # overall hit rates
+# note nltk library's freq dist was not used to get the individual tokens, due to computer constrains
+
 def hitRateunique(data):  # takes the entire data set
     # this function produces the hit rate for all the unique words in token
     vectorizer = CountVectorizer()
@@ -142,6 +146,7 @@ print('hit rate for just the unique words of the vocab(using countvectorizer)',h
 print('hit rate for all the words of the vocab(using nltk)',hitRate(post))
 
 
+#____________________________________Q3.5/3.6/3.7
 # neural network
 
 def createEmbVector(post):  # takes in tokenized data
