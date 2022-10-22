@@ -25,7 +25,7 @@ open Google colab on any browser, login with gmail account<br />
 2. from the Q2 folder select the desired ipynb file to run and upload<br />
 3. once opened, on the left side select the files icon(4th icon on the left panel) wait for it to connect<br />
 4. right click inside the panel and select upload, and then upload the data.csv file that was genereted in Q1 (inside the Q1 folder), and do this for every notebook <br />
-5. once uploaded, run the indiviudal code blocks=. <br />
+5. once uploaded, run the indiviudal code blocks. <br />
 
 ### for .py files <br />
 cd into Q2<br />
