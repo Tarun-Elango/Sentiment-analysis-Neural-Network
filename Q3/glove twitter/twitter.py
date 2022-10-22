@@ -19,7 +19,6 @@ file = open(sys.path[0] + '/../../Q1/data.csv', encoding="utf-8")
 # download the model and save to computer
 #modeltwitter = download.load("glove-twitter-25", return_path= True)
 modeltwitter = KeyedVectors.load_word2vec_format("glove-twitter-25.txt", binary=False)
-#print(modeltwitter['japan'].shape) #test if model works
 
 hyperparameters = {
     'activation': ['relu','tanh'],  # , ,'identity', 'logistic''relu',
@@ -74,8 +73,8 @@ def tokensCountNoPunc(post_noPunc):  # takes in tokenized data
 
 
 # print(uniqueTokens(post))
-#print('total tokens for reddit post in training set is: ', tokensCount(df_x))
-#print('total tokens for reddit post without punctuations in training set is: ', tokensCountNoPunc(post_noPunc))
+print('total tokens for reddit post in training set is: ', tokensCount(df_x))
+print('total tokens for reddit post without punctuations in training set is: ', tokensCountNoPunc(post_noPunc))
 
 
 def postEmb(post, x):  # takes in post number and post
@@ -96,7 +95,7 @@ def postEmb(post, x):  # takes in post number and post
         avg = sumEmbedd / totalCount
     return avg
 
-#print('embedding of a reddit post 10 as the average of embeddings of its words', postEmb(10))
+print('embedding of a reddit post 10 as the average of embeddings of its words', postEmb(10))
 
 # overall hit rates
 def hitRateunique(data):  # takes the entire data set
@@ -186,13 +185,13 @@ def grid_neural(x_train, X_text, y_train, y_test):
 X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, random_state=50)
 
 #hit rate for test and training set
-#print('hit rate for all the training set of the vocab(using nltk)',hitRate(X_train))
-#print('hit rate for all the test set of the vocab(using nltk)',hitRate(post))
+print('hit rate for all the training set of the vocab(using nltk)',hitRate(X_train))
+print('hit rate for all the test set of the vocab(using nltk)',hitRate(post))
 
 # emotion
 performance.write('\nQ3 emotion metrics\n')
-#print('base neural network accuracy score for emotion is :', base_neural(X_train, X_test, Y_train, Y_test))
-#print('grid search neural network accuracy score for emotion is :', grid_neural(X_train, X_test, Y_train, Y_test))
+print('base neural network accuracy score for emotion is :', base_neural(X_train, X_test, Y_train, Y_test))
+print('grid search neural network accuracy score for emotion is :', grid_neural(X_train, X_test, Y_train, Y_test))
 
 performance.write('\n----------------------------x---------------------------\n')
 
@@ -201,8 +200,8 @@ performance.write('\n----------------------------x---------------------------\n'
 x2_train, x2_test, z_train, z_test = train_test_split(X, Z, test_size=0.2, random_state=50)
 # sentiment
 performance.write('\nQ3 sentiment metrics\n')
-#print('base neural network accuracy score for sentiment is :', base_neural(x2_train, x2_test, z_train, z_test))
-#print('grid search neural network accuracy score for sentiment is :', grid_neural(x2_train, x2_test, z_train, z_test))
+print('base neural network accuracy score for sentiment is :', base_neural(x2_train, x2_test, z_train, z_test))
+print('grid search neural network accuracy score for sentiment is :', grid_neural(x2_train, x2_test, z_train, z_test))
 performance.write('\n----------------------------x---------------------------\n')
 
 performance.close()
